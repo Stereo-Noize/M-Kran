@@ -10,10 +10,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
     <!-- Line Awesome Font -->
-    <link rel="stylesheet" type="text/css" href="assets/css/line-awesome-font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/line-awesome.min.css">
 
     <!-- Museo Sans Font -->
     <link rel="stylesheet" type="text/css" href="assets/fonts/MuseoSans/stylesheet.css">
+
+    <!-- Bebas Neue Font -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/BebasNeue/stylesheet.css">
 
     <!-- Animate CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
@@ -25,12 +28,118 @@
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <title>M-Kran</title>
   </head>
   <body>
+
+    <header class="header" id="header">
+
+      <div class="top-bar sticky-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="top-bar__logo">
+                <a href="index.html">
+                  <img src="assets/img/logo.png" alt="M-Kran">
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-2 col-md-5 col-lg-7">
+              <div class="top-bar__menu">
+                <a href="javascript:void(0)" class="d-flex d-lg-none top-bar__menu__trigger">
+                  <i class="la la-bars"></i>
+                  <span class="d-none d-sm-block">Меню</span>
+                </a>
+                <ul class="list-unstyled top-bar__menu__list">
+                  <li><a href="page-about.html">О нас</a></li>
+                  <li><a href="product-cat1.html">Каталог кранов</a></li>
+                  <li><a href="page-delivery.html">Перевозки</a></li>
+                  <li><a href="page-price.html">Цены</a></li>
+                  <li><a href="category-objects.html">Объекты</a></li>
+                  <li><a href="category-news.html">Новости</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="top-bar__links">
+                <a href="tel:+74993904949" class="top-bar__links__phone">+7 (499) 390-49-49</a>
+                <a href="mailto:m-kran@m-kran.ru" class="top-bar__links__mail">m-kran@m-kran.ru</a>
+                <a href="#modalCall" data-toggle="modal" data-target="#modalCall" class="top-bar__links__modal">Связаться с нами</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-widgets">
+        <a href="#modalMap" data-toggle="modal" class="side-widgets__link"><i class="la la-map-marker"></i></a>
+        <a href="#modalCall" data-toggle="modal" class="side-widgets__link"><i class="la la-phone"></i></a>
+        <a href="#modalMail" data-toggle="modal" class="side-widgets__link"><i class="la la-comments"></i></a>
+      </div>
+
+    </header>
+
+    <section class="header-banner" id="headerBanner">
+      <div class="header-banner__cover" style="background-image: url(assets/img/ind_header.png);"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-9 col-xl-8">
+            <div class="header-banner__text">
+              <h1 class="striped">Аренда Автокранов <br> и другая спецтехника <br> по всей России и СНГ</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="categories">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="category">
+              <div class="category__image" style="background-image: url(assets/img/cat-1.png);"></div>
+              <div class="category__title">
+                <h2>Автокраны</h2>
+              </div>
+              <div class="category__desc">
+                <div class="category__desc__item">от <span>50</span> тонн</div>
+                <div class="category__desc__item">до <span>500</span> тонн</div>
+              </div>
+              <div class="category__link"><a href="">Перейти в каталог</a></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="category">
+              <div class="category__image" style="background-image: url(assets/img/cat-2.png);"></div>
+              <div class="category__title">
+                <h2>Гусеничные краны</h2>
+              </div>
+              <div class="category__desc">
+                <div class="category__desc__item">от <span>80</span> тонн</div>
+                <div class="category__desc__item">до <span>1600</span> тонн</div>
+              </div>
+              <div class="category__link"><a href="">Перейти в каталог</a></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="category">
+              <div class="category__image" style="background-image: url(assets/img/cat-3.png);"></div>
+              <div class="category__title">
+                <h2>Грузоперевозки</h2>
+              </div>
+              <div class="category__desc">
+                <div class="category__desc__item"></div>
+                <div class="category__desc__item">до <span>20</span> тонн</div>
+              </div>
+              <div class="category__link"><a href="">Перейти в каталог</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -38,7 +147,6 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
