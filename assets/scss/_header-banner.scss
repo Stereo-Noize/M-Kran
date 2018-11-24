@@ -1,0 +1,60 @@
+/* Header Banner */
+.header-banner{
+	position: relative;
+	height: 550px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	@media(max-width: 575px) {
+		padding: 50px 0;
+		height: auto;
+	};
+	&__cover{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #000;
+		background-position: 50% 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+	};
+	&__text{
+		background-color: rgba(0,0,0,0.6);
+		padding: 25px;
+		@media(max-width: 575px) {
+			padding: 25px 15px;
+	  };
+		.striped{
+			font-family: 'Bebas Neue';
+			font-size: 68px;
+			text-transform: uppercase;
+			font-weight: bold;
+			text-align: center;
+		  -webkit-background-clip: text;
+		  background-clip: text;
+	    -webkit-background-clip: text;
+	    -o-background-clip: text;
+	    -moz-background-clip: text;
+	    text-fill-color: transparent;
+	    -webkit-text-fill-color: transparent;
+	    -o-text-fill-color: transparent;
+	    -moz-text-fill-color: transparent;
+		  background-color: $white;
+		  background-image: url(../img/stripe.png);
+			@media(max-width: 767px) {
+				font-size: 48px;
+	    };
+	    @media(max-width: 575px) {
+				font-size: 32px;
+	    };
+		};
+	};
+};
+/* End Header Banner */

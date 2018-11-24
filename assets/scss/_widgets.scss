@@ -1,0 +1,52 @@
+/* Widgets */
+.side-widgets {
+	position: fixed;
+	top: calc(50% - 84px);
+	left: auto;
+	right: calc(50% - 625px);
+	bottom: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	z-index: 1020;
+	@media(max-width: 1200px) {
+		right: 5px;
+	};
+	@media(max-width: 575px) {
+		right: 0;
+	};
+	&__link{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		width: 55px;
+		height: 55px;
+		background-color: $accent;
+		margin-bottom: 1px;
+		color: $dark;
+		font-size: 24px;
+		@media(max-width: 575px) {
+			width: 40px;
+			height: 40px;
+		};
+		&:hover, &:focus, &:active{
+			color: $white;
+		};
+		&:last-child{
+			margin-bottom: 0;
+		};
+	};
+};
+/* End Widgets */

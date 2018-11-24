@@ -1,0 +1,20 @@
+/* Main */
+body {
+	font-family: 'MuseoSans';
+};
+a:focus,
+a:active,
+a:hover {
+	color: $accent;
+	text-decoration: none;
+};
+* {
+	transition: all 0.3s ease-in-out;
+}
+section {
+	padding: 50px 0;
+}
+section.categories {
+	padding: 50px 0 20px;
+}
+/* End Main */

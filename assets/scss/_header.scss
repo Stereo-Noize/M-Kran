@@ -1,0 +1,152 @@
+/* Header */
+.top-bar{
+	background-color: $dark;
+	min-height: 135px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 15px 0;
+	&__logo{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		justify-content: center;
+	};
+	&__menu{
+		height: 100%;
+		font-family: 'Bebas Neue';
+		font-size: 24px;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		&__trigger{
+			font-size: 30px;
+			color: $white;
+			text-transform: uppercase;
+			width: 100%;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-ms-align-items: center;
+			align-items: center;
+			justify-content: center;
+			@media(max-width: 575px) {
+				justify-content: flex-end;
+	    };
+			&:focus, &:active, &:hover {
+				text-decoration: none;
+				color: $accent;
+			};
+			i{
+				font-size: 36px;
+				margin-bottom: 3px;
+			};
+			span{
+				margin-left: 7.5px;
+			}
+		};
+		&__list {
+			width: 100%;
+			position: relative;
+			margin: 0;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-flex-direction: row;
+			-moz-flex-direction: row;
+			-ms-flex-direction: row;
+			-o-flex-direction: row;
+			flex-direction: row;
+			justify-content: space-around;
+			-ms-align-items: center;
+			align-items: center;
+			@media(max-width: 991px) {
+				position: fixed;
+				top: -1000px;
+				left: 0;
+				right: 0;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        background-color: $dark;
+        transition: all 0.5s ease-in-out;
+        padding: 25px 0;
+        z-index: 1000;
+        opacity: 0;
+      };
+			li{
+				a{
+					color: $white;
+					&:hover, &:focus, &:active{
+						text-decoration: none;
+						color: $accent;
+					};
+				};
+			};
+		};
+		&__list-open{
+			top: 135px;
+			opacity: 1.0;
+			transition: all 0.5s ease-in-out;
+			@media(max-width: 575px) {
+				top: 198px;
+	    };
+		}
+	};
+	&__links{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		justify-content: flex-end;
+		text-align: right;
+		@media(max-width: 575px) {
+			justify-content: center;
+			text-align: center;
+			margin-top: 15px;
+    };
+		&__phone{
+			font-size: 19px;
+			font-weight: 900;
+			color: $accent;
+		};
+		&__mail{
+			font-size: 17px;
+			font-weight: bold;
+			color: $white;
+		};
+		&__modal{
+			font-size: 16px;
+			font-weight: bold;
+			color: $accent;
+			text-decoration: underline;
+		};
+	};
+};
+/* End Header */
