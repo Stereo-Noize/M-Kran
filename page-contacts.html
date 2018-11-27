@@ -35,8 +35,384 @@
   </head>
   <body>
 
+    <header class="header" id="header">
 
+      <div class="top-bar sticky-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="top-bar__logo">
+                <a href="index.html">
+                  <img src="assets/img/logo.png" alt="M-Kran">
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-sm-2 col-md-5 col-lg-7">
+              <div class="top-bar__menu">
+                <a href="javascript:void(0)" class="d-flex d-lg-none top-bar__menu__trigger">
+                  <i class="la la-bars"></i>
+                  <span class="d-none d-sm-block">Меню</span>
+                </a>
+                <ul class="list-unstyled top-bar__menu__list">
+                  <li><a href="page-about.html">О нас</a></li>
+                  <li class="sub-menu-toggler">
+                    <a href="#subMenu" data-toggle="collapse">Каталог кранов</a>
+                    <ul id="subMenu" class="list-unstyled sub-menu collapse">
+                      <li><a href="product-cat1.html">Автокраны</a></li>
+                      <li>
+                        <a href="#productMenu" data-toggle="collapse">до 100 тонн</a>
+                        <ul id="productMenu" class="list-unstyled collapse">
+                          <li><a href="single-product.html">Liebherr LTM 1050</a></li>
+                          <li><a href="single-product.html">Liebherr LTM 1055</a></li>
+                          <li><a href="single-product.html">Liebherr LTM 1060</a></li>
+                          <li><a href="single-product.html">Liebherr LTM 1070</a></li>
+                          <li><a href="single-product.html">Liebherr LTM 1090</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="javascript:void(0);">до 250 тонн</a></li>
+                      <li><a href="javascript:void(0);">до 500 тонн</a></li>                    
+                      <li>
+                        <a href="product-cat2.html">Гусеничные краны</a>                        
+                      </li>
+                      <li>
+                        <a href="product-cat3.html">Подъемники</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="page-delivery.html">Перевозки</a></li>
+                  <li><a href="page-price.html">Цены</a></li>
+                  <li><a href="category-objects.html">Объекты</a></li>
+                  <li><a href="category-news.html">Новости</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="top-bar__links">
+                <a href="tel:+74993904949" class="top-bar__links__phone">+7 (499) 390-49-49</a>
+                <a href="mailto:m-kran@m-kran.ru" class="top-bar__links__mail">m-kran@m-kran.ru</a>
+                <a href="#modalCall" data-toggle="modal" data-target="#modalCall" class="top-bar__links__modal">Связаться с нами</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="side-widgets">
+        <a href="#modalMap" data-toggle="modal" class="side-widgets__link"><i class="la la-map-marker"></i></a>
+        <a href="#modalCall" data-toggle="modal" class="side-widgets__link"><i class="la la-phone"></i></a>
+        <a href="#modalMail" data-toggle="modal" class="side-widgets__link"><i class="la la-comments"></i></a>
+      </div>
+
+    </header>
+
+    <section id="main" class="main contacts-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="section-title">Контакты</h1>
+          </div>
+          <div class="col-12 col-sm-10 col-md-7 col-lg-6 col-xl-5">
+            <div class="contact-block">
+              <h4>Адрес центрального офиса</h4>
+              <p>108814, г. Москва, поселок Коммунарка, ул. Александры Монаховой, дом 30, стр. 1</p>
+              <p>Заказ техники: <a href="tel:+74993904949">+7 (499) 390-49-49</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div id="map" class="row map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaab57df066373cd9fa343af6316582a684cea1568d457f46f88089c31575ef7d&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </div>
+    </section>
+
+    <section id="callback" class="callback-section">
+      <div class="container">
+        <div class="callback-section__image"><img src="assets/img/crane-for-loler.png" alt=""></div>
+        <div class="row">
+          <div class="col-12">
+            <div class="callback-section__title">
+              <h2>Время работы наших<br>менеджеров круглосуточное</h2>
+            </div>
+          </div>
+          <div class="col-12">
+            <form action="">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <textarea name="" id="" placeholder="Задать вопрос"></textarea>
+                </div>
+                <div class="col-12 col-md-6">
+                  <input type="text" placeholder="Представьтесь">
+                  <input type="email" placeholder="Ваш Email">
+                  <input type="tel" placeholder="Ваш телефон">
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <input type="submit" class="button button-dark" value="Отправить">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3 order-1 order-sm-3 order-lg-1">
+            <div class="footer-block">
+              <div class="footer-block__logo">
+                <img src="assets/img/footer-logo.png" alt="">
+              </div>
+              <div class="footer-block__text">
+                <span>Аренда кранов LIEBHERR<br>по всей России и странам СНГ</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 order-2 order-sm-1 order-lg-2">
+            <div class="footer-block">
+              <div class="footer-block__menu">
+                <ul class="list-unstyled">
+                  <li><a href="page-about.html">О компании</a></li>
+                  <li><a href="category-objects.html">Объекты</a></li>
+                  <li><a href="category-news.html">Новости</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="page-contacts.html">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 order-3 order-sm-2 order-lg-3">
+            <div class="footer-block">
+              <div class="footer-block__menu">
+                <ul class="list-unstyled">
+                  <li><a href="page-price.html">Цены</a></li>
+                  <li><a href="product-cat1.html">Автокраны</a></li>
+                  <li><a href="product-cat2.html">Гусеничные краны</a></li>
+                  <li><a href="product-cat3.html">Низкорамный Трал</a></li>
+                  <li><a href="page-delivery.html">Перевозка негабаритного груза</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 order-4">
+            <div class="footer-block">
+              <div class="footer-block__contacts">
+                <div class="footer-block__contacts__address">
+                  <span>Адрес центрального офиса:</span>
+                  <p>108814, г. Москва, поселок Коммунарка, ул. Александры Монаховой, дом 30, стр. 1</p>
+                </div>
+                <div class="footer-block__contacts__phone">
+                  <span>Тел.:</span>
+                  <a href="tel:+74993904949">+7 (499) 390-49-49</a>
+                </div>
+                <div class="footer-block__contacts__mail">
+                  <span>E-mail:</span>
+                  <a href="mailto:m-kran@m-kran.ru">m-kran@m-kran.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-5">
+            <div class="footer-block">
+              <div class="footer-block__copy">
+                <span>ООО "М-Кран". 2004 - 2018.  Все права защищены</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-6">
+            <div class="footer-block">
+              <div class="footer-block__dev">
+                <span>Сайт разработан Web - студией: <a href="https://dlimmc.ru">D.Lim Marketing Consult</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Callback -->
+    <div class="modal fade" id="modalCall" tabindex="-1" role="dialog" aria-labelledby="modalCallTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalCallTitle">Связаться<br>с нами</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="la la-close"></i></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-12">
+                  <input type="text" placeholder="Представьтесь">
+                </div>
+                <div class="col-12">
+                  <input type="tel" placeholder="Номер телефона">
+                </div>
+                <div class="col-12">
+                  <input type="email" placeholder="E-mail">
+                </div>
+                <div class="col-12">
+                  <textarea name="" id="" placeholder="Текст сообщения"></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="privacy" class="privacy-label">
+                    <span class="check"><i class="la la-check"></i></span>Я даю своё согласие на обработку<br>персональных данных
+                    <input type="checkbox" name="privacy">
+                  </label>
+                </div>
+                <div class="col-12">
+                  <input type="submit" class="button button-dark" value="Отправить">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Mail -->
+    <div class="modal fade" id="modalMail" tabindex="-1" role="dialog" aria-labelledby="modalMailTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalMailTitle">Напишите<br>нам</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="la la-close"></i></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-12">
+                  <input type="text" placeholder="Представьтесь">
+                </div>
+                <div class="col-12">
+                  <input type="tel" placeholder="Номер телефона">
+                </div>
+                <div class="col-12">
+                  <input type="email" placeholder="E-mail">
+                </div>
+                <div class="col-12">
+                  <textarea name="" id="" placeholder="Текст сообщения"></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="privacy" class="privacy-label">
+                    <span class="check"><i class="la la-check"></i></span>Я даю своё согласие на обработку<br>персональных данных
+                    <input type="checkbox" name="privacy">
+                  </label>
+                </div>
+                <div class="col-12">
+                  <input type="submit" class="button button-dark" value="Отправить">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Calc -->
+    <div class="modal fade" id="modalCalc" tabindex="-1" role="dialog" aria-labelledby="modalCalcTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalCalcTitle">Расчитать<br>стоимость</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="la la-close"></i></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-12">
+                  <input type="text" placeholder="Представьтесь">
+                </div>
+                <div class="col-12">
+                  <input type="tel" placeholder="Номер телефона">
+                </div>
+                <div class="col-12">
+                  <input type="email" placeholder="E-mail">
+                </div>
+                <div class="col-12">
+                  <textarea name="" id="" placeholder="Текст сообщения"></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="privacy" class="privacy-label">
+                    <span class="check"><i class="la la-check"></i></span>Я даю своё согласие на обработку<br>персональных данных
+                    <input type="checkbox" name="privacy">
+                  </label>
+                </div>
+                <div class="col-12">
+                  <input type="submit" class="button button-dark" value="Отправить">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Order -->
+    <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="modalOrderTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalOrderTitle">Оставить заявку<br>на Liebherr LTM1050</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="la la-close"></i></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-12">
+                  <input type="text" placeholder="Представьтесь">
+                </div>
+                <div class="col-12">
+                  <input type="tel" placeholder="Номер телефона">
+                </div>
+                <div class="col-12">
+                  <input type="email" placeholder="E-mail">
+                </div>
+                <div class="col-12">
+                  <textarea name="" id="" placeholder="Текст сообщения"></textarea>
+                </div>
+                <div class="col-12">
+                  <label for="privacy" class="privacy-label">
+                    <span class="check"><i class="la la-check"></i></span>Я даю своё согласие на обработку<br>персональных данных
+                    <input type="checkbox" name="privacy">
+                  </label>
+                </div>
+                <div class="col-12">
+                  <input type="submit" class="button button-dark" value="Отправить">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Map -->
+    <div class="modal fade" id="modalMap" tabindex="-1" role="dialog" aria-labelledby="modalMapTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalMapTitle">Адрес<br>центрального офиса</h3>            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="la la-close"></i></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>108814, г. Москва, поселок Коммунарка, ул. Александры Монаховой, дом 30, стр. 1</p>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaab57df066373cd9fa343af6316582a684cea1568d457f46f88089c31575ef7d&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
