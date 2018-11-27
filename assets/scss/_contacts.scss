@@ -1,3 +1,38 @@
 /* Contacts */
-
+.contact-block{
+	margin-bottom: 30px;
+	h4{
+		font-size: 24px;
+		font-weight: 900;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-family: 'MuseoSans';
+		text-transform: none;
+	}
+	p{
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 25px;
+		color: lighten($dark, 10%);
+		padding-right: 70px;		
+		@media(max-width: 991px) {
+			padding-right: 15px;
+		};
+		@media(max-width: 767px) {
+			padding-right: 35px;
+		};
+		@media(max-width: 575px) {
+			padding-right: 0;
+		};
+	}
+	a{
+		display: inline-block;
+		font-weight: 900;
+		color: lighten($dark, 10%);
+		&:hover{
+			color: $accent;
+			text-decoration: none;
+		}
+	}
+}
 /* End Contacts */

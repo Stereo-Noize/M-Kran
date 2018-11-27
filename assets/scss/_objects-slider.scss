@@ -1,0 +1,138 @@
+/* Objects Slider */
+.objects-slider{
+	padding: 0 0;
+	.object{
+		background-color: #fdb50a;
+		min-height: 500px;
+		&__desc{
+			width: 570px;
+			padding: 75px 100px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			justify-content: space-between;
+			@media(max-width: 1200px) {
+				width: 480px;
+				padding: 75px 65px;
+	    };
+	    @media(max-width: 991px) {
+				width: 360px;
+				padding: 75px 55px 75px 25px;
+	    };
+	    @media(max-width: 767px) {
+				width: 270px;
+				padding: 45px 15px;
+	    };
+	    @media(max-width: 575px) {
+	    	width: 100%;
+				padding: 45px 15px;
+	    };
+			&__head{				
+				h2{
+					font-size: 48px;
+					line-height: 73px;
+					color: $dark;
+				};
+			};
+			&__date{
+				font-size: 16px;
+				font-weight: bold;
+				color: lighten($dark, 20%)
+			};
+			&__title{
+				padding-right: 100px;
+				@media(max-width: 991px) {
+					padding-right: 0;
+		    };
+		    @media(max-width: 767px) {
+					padding-right: 0;
+					margin-bottom: 30px;
+		    };
+				h3{
+					font-size: 28px;
+					line-height: 32px;
+					color: $dark;
+				};
+			};
+			&__message{
+				font-size: 18px;
+				font-weight: bold;
+				color: $dark;
+			};
+			&__link{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				margin-bottom: 10px;
+				a{};
+			};
+		};
+		&__image{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			-ms-align-items: center;
+			align-items: center;
+			max-height: 550px;
+			overflow: hidden;
+			img{
+				min-width: 100%;				
+			};
+		};
+	};
+	.slick-prev, .slick-next{
+		width: 38px;
+		height: 38px;
+		font-size: 38px;
+		line-height: 38px;
+		opacity: 0.75;
+		color: $dark;
+		z-index: 1;
+		@media(max-width: 575px) {
+			top: 44%;
+	  };
+		&:before{
+			display: none;
+		};
+	}
+	.slick-prev{
+		left: calc(50% - 555px);
+		@media(max-width: 1200px) {
+			left: calc(50% - 465px);
+	  };
+	  @media(max-width: 991px) {
+			left: calc(50% - 380px);
+	  };
+	  @media(max-width: 767px) {
+			left: calc(50% - 255px);
+	  };
+	  @media(max-width: 575px) {
+			left: 15px;
+	  };
+	}
+	.slick-next{
+		right: calc(50% + 55px);
+		@media(max-width: 1200px) {
+			right: calc(50% + 15px);
+	  };
+	  @media(max-width: 991px) {
+			right: calc(50% + 10px);
+	  };
+	  @media(max-width: 575px) {
+			right: 15px;
+	  };
+	}
+};
+/* End Objects Slider */

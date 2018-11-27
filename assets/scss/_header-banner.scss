@@ -1,7 +1,7 @@
 /* Header Banner */
 .header-banner{
+	padding: 0;
 	position: relative;
-	height: 550px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -10,10 +10,34 @@
 	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
-	@media(max-width: 575px) {
-		padding: 50px 0;
-		height: auto;
-	};
+	.slide{
+		position: relative;
+		height: 550px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		&-striped{
+			background-image: url(../img/stripe2.png);
+			height: 440px;
+	    @media(max-width: 575px) {
+				height: 350px;
+	    };
+		}
+		@media(max-width: 991px) {
+			height: 400px;
+	  };
+	  @media(max-width: 767px) {
+	  };
+		@media(max-width: 575px) {
+			padding: 50px 0;
+			height: auto;
+		};
+	}
 	&__cover{
 		position: absolute;
 		top: 0;
@@ -31,7 +55,27 @@
 		@media(max-width: 575px) {
 			padding: 25px 15px;
 	  };
+	  &-transparent{
+	  	background-color: transparent;
+	  	h1{
+	  		font-size: 68px;
+	  		line-height: 73px;
+				text-transform: uppercase;
+				font-weight: bold;
+				text-align: center;
+				color: $dark;
+				@media(max-width: 767px) {
+					font-size: 48px;
+					line-height: 52px;
+		    };
+		    @media(max-width: 575px) {
+					font-size: 32px;
+					line-height: 35px;
+		    };
+	  	}
+	  }
 		.striped{
+			margin-bottom: 0;
 			font-family: 'Bebas Neue';
 			font-size: 68px;
 			text-transform: uppercase;
@@ -56,5 +100,50 @@
 	    };
 		};
 	};
+	.slick-prev, .slick-next{
+		width: 38px;
+		height: 53px;
+		font-size: 38px;
+		line-height: 38px;
+		opacity: 0.75;
+		color: $dark;
+		z-index: 1;
+		@media(max-width: 575px) {
+			top: 44%;
+	  };
+		&:before{
+			display: none;
+		};
+	}
+	.slick-prev{
+		left: calc(50% - 555px);
+		@media(max-width: 1200px) {
+			left: calc(50% - 465px);
+	  };
+	  @media(max-width: 991px) {
+			left: calc(50% - 380px);
+	  };
+	  @media(max-width: 767px) {
+			left: 15px;
+	  };
+	}
+	.slick-next{
+		right: calc(50% - 555px);
+		@media(max-width: 1200px) {
+			right: calc(50% - 465px);
+	  };
+	  @media(max-width: 991px) {
+			right: calc(50% - 380px);
+	  };
+	  @media(max-width: 767px) {
+			right: 15px;
+	  };
+	}
+	.slick-dotted{
+		margin-bottom: 0;
+	}
+	.slick-dots {
+		bottom: 10px;
+	}
 };
 /* End Header Banner */

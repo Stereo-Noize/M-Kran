@@ -1,3 +1,129 @@
 /* Footer */
-
+.footer{
+	padding: 70px 0 15px 0;
+	background-color: $dark;
+	&-block{
+		&__logo{			
+			margin-bottom: 25px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-ms-align-items: center;
+			align-items: center;
+			justify-content: flex-start;
+			@media(max-width: 991px) {
+				margin-top: 25px;
+			};
+			@media(max-width: 575px) {
+				margin-top: 0;
+				justify-content: center;
+			};
+			img{
+				max-width: 100%;
+			};
+		};
+		&__text{
+			font-size: 14px;
+			line-height: 17px;
+			font-weight: 500;
+			color: $white;
+			@media(max-width: 575px) {
+				text-align: center;
+			};
+		};
+		&__menu{
+			margin: 0;
+			margin-top: 15px;
+			li{
+				a{
+					color: $white;
+					font-size: 16px;
+					line-height: 35px;
+					font-weight: bold;
+					&:hover,&:focus,&:active{
+						color: $accent;
+						text-decoration: none;
+					};
+				};
+			};
+		};
+		&__contacts{
+			padding-left: 45px;
+			margin-top: 15px;
+			font-size: 15px;
+			line-height: 22px;
+			font-weight: 500;
+			color: $white;
+			@media(max-width: 1200px) {
+				padding-left: 0;
+			};			
+			&__address{
+				margin-bottom: 25px;
+				span{
+					font-size: 18px;
+					font-weight: bold;
+					line-height: 35px;
+					color: #7d7d7d;
+					display: block;
+					margin-bottom: 10px;
+				};
+			};
+			&__phone{
+				margin-bottom: 10px;
+				span{
+					color: $accent;
+				};
+				a{
+					color: $white;
+					&:hover,&:focus,&:active{
+						color: $accent;
+						text-decoration: none;
+					};
+				};
+			};
+			&__mail{
+				span{
+					color: $accent;
+				};
+				a{
+					color: $white;
+					&:hover,&:focus,&:active{
+						color: $accent;
+						text-decoration: none;
+					};
+				};
+			};
+		};
+		&__copy{
+			margin-top: 50px;
+			font-size: 14px;
+			font-weight: 500;
+			color: lighten($dark, 50%);
+			@media(max-width: 991px) {
+				margin-top: 15px;
+				text-align: center;
+			};
+		};
+		&__dev{
+			margin-top: 50px;
+			font-size: 14px;
+			font-weight: 500;
+			color: lighten($dark, 50%);
+			text-align: right;
+			@media(max-width: 991px) {
+				margin-top: 0;
+				text-align: center;
+			};
+			a{
+				color: lighten($dark, 50%);
+				&:hover,&:focus,&:active{
+					color: $accent;
+					text-decoration: none;
+				};
+			};
+		};
+	};
+};
 /* End Footer */

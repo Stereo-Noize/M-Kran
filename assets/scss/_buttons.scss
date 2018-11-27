@@ -1,3 +1,77 @@
 /* Buttons */
-
+.button{
+	position: relative;
+	font-size: 16px;
+	font-weight: bold;
+	color: $white;
+	padding: 0 60px;
+	height: 55px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	border: none;
+	text-align: center;
+	&:hover,&:focus,&:active{
+		text-decoration: none;
+	}
+	&:after{
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		border: 1px solid transparent;
+		transition: all 0.3s ease;
+	};
+	&-small{
+		padding: 0 40px;
+	}
+	&-dark{
+		color: $white;
+		background-color: $dark;
+		&:hover,&:focus,&:active{
+			color: $white;
+			background-color: $accent;
+			text-decoration: none;
+			/*&:after{
+				top: 5px;
+				left: 5px;
+				right: 5px;
+				bottom: 5px;
+				height: 45px;
+				width: calc(100% - 10px);
+				border-color: $dark;
+			};*/
+		};
+	};
+	&-accent{
+		color: $dark;
+		background-color: $accent;
+		&:hover,&:focus,&:active{
+			color: $white;
+			background-color: $dark;
+			text-decoration: none;
+			/*&:after{
+				top: 5px;
+				left: 5px;
+				right: 5px;
+				bottom: 5px;
+				height: 45px;
+				width: calc(100% - 10px);
+				border-color: $accent;
+			};*/
+		};
+	};
+	&-center{
+		margin: 0 15px;
+	}
+};
 /* End Buttons */

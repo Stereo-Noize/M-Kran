@@ -1,3 +1,40 @@
 /* Forms */
-
+input{
+	height: 60px;
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: #f0f0f2;
+	border: 2px solid $accent;
+	padding-left: 30px;
+	font-size: 16px;
+	font-weight: 500;
+	&[type="submit"]{
+		width: auto;
+		&:hover{
+			color: $white;
+			cursor: pointer;
+		};
+	}
+	&:focus,&:active{
+		border-color: $accent;
+		outline: 0 none;
+		box-shadow: 0 0 5px $accent;
+	};
+}
+textarea{
+	height: 220px;
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: #f0f0f2;
+	border: 2px solid $accent;
+	padding-top: 20px;
+	padding-left: 30px;
+	font-size: 16px;
+	font-weight: 500;
+	&:focus,&:active{
+		border-color: $accent;
+		outline: 0 none;
+		box-shadow: 0 0 5px $accent;
+	};
+}
 /* End Forms */

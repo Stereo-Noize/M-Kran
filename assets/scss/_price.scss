@@ -1,0 +1,61 @@
+/* Price */
+.price-block{
+	&__title{
+		h5{
+			font-family: 'MuseoSans';
+			font-size: 19px;
+			line-height: 23px;
+			font-weight: 900;
+			text-transform: none;
+			margin-bottom: 20px;
+			color: lighten($dark, 10%)
+		}
+	}
+	&__desc{
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 25px;
+		margin-bottom: 30px;
+		color: lighten($dark, 15%)
+	}
+	&__table{
+		margin-bottom: 40px;
+		.table {
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			min-width: 100%;
+			white-space: nowrap;
+			td{
+				border-bottom: 1px solid #bbbbbb;
+				border-right: 1px solid #bbbbbb;
+				padding: 1.25rem .75rem;				
+			}
+			th{
+				border-bottom: 1px solid #bbbbbb;
+				border-right: 1px solid #bbbbbb;
+				border-left: 1px solid #bbbbbb;
+				padding: 1.25rem .75rem;
+			}
+			thead{
+			 th{
+			 	border: none;
+			 	border-bottom: 1px solid #bbbbbb;
+			 	border-right: 1px solid #bbbbbb;
+			 	&:last-child{
+			 		border: none;
+			 		border-bottom: 1px solid #bbbbbb;
+			 	}
+			 }
+			}
+			a{
+				color: $accent;
+				text-decoration: underline;
+				&:hover{
+					color: $dark;
+				}
+			}
+		}
+	}
+}
+/* End Price */
